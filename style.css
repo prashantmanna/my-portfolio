@@ -34,6 +34,7 @@ nav {
   gap: 2rem;
   list-style-type: none;
   font-size: 1.5rem;
+  align-items: center;
 }
 a {
   color: black;
@@ -41,16 +42,16 @@ a {
   text-decoration-color: white;
 }
 a:hover {
-  color: grey !important;
-  text-decoration: underline !important;
+  color: grey;
+  text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: 181, 181, 181;
+  text-decoration-color: rgb(181, 181, 181);
 }
 .logo {
   font-size: 2rem;
 }
 .logo:hover {
-  cursor: default !important;
+  cursor: default;
 }
 #hamburger-nav {
   align-items: center;
@@ -72,17 +73,17 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0%;
+  right: 0;
   background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links.open {
@@ -96,7 +97,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .menu-links li {
   list-style: none;
@@ -110,6 +111,16 @@ a:hover {
 .hambergur-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
+.hambergur-icon span:first-child {
+  transform: none;
+}
+.hambergur-icon span:first-child {
+  opacity: 1;
+}
+.hambergur-icon span:first-child {
+  transform: none;
+}
+
 /*section*/
 section {
   padding-top: 4vh;
@@ -118,6 +129,10 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
+.section-container {
+  display: flex;
+}
+/*profile*/
 #profile {
   display: flex;
   justify-content: center;
@@ -141,25 +156,25 @@ section {
   text-align: center;
   padding-right: 100px;
 }
-.section__text.btn-container {
-  text-align: center;
-  align-self: center;
-}
 .section__text p {
   font-weight: 600;
 }
 .section__text__p1 {
   text-align: center;
-  font-size: 1rem;
-  margin-bottom: 1rem;
 }
 .section__text__p2 {
-  font-size: 20px;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 .title {
   font-size: 3rem;
   text-align: center;
 }
+.section__text.btn-container {
+  text-align: center;
+  align-self: center;
+}
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -177,8 +192,7 @@ section {
   justify-content: center;
   gap: 1rem;
 }
-.btn-color-1,
-.btn-color-2 {
+.btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -187,7 +201,7 @@ section {
 }
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid transparent;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 .btn-color-1:hover,
 .btn-color-2:hover {
@@ -202,10 +216,10 @@ section {
   background: rgb(0, 0, 0);
 }
 .btn-color-2 {
-  background: none !white;
+  background: none;
 }
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid transparent;
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 .btn-container {
   gap: 1rem;
@@ -238,8 +252,20 @@ section {
   right: -5rem;
   bottom: 2.5rem;
 }
-.details-containers {
+.details-container {
   padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.text-container {
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -358,5 +384,8 @@ footer p {
   text-align: center;
 }
 .footer-nav {
+  align-items: center;
+}
+.nav-links-container {
   align-items: center;
 }
