@@ -133,6 +133,17 @@ section {
   display: flex;
 }
 /*profile*/
+
+.rounded-circle {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  border-radius: 50%;
+  border-bottom: 0%;
+  border-color: black;
+  border: 5px;
+  object-fit: fill;
+  margin-top: 30px;
+}
 #profile {
   display: flex;
   justify-content: center;

@@ -16,8 +16,14 @@
   .arrow {
     display: none;
   }
+  .rounded-circle {
+    margin-top: 0%;
+  }
 }
 @media screen and (max-width: 1400px) {
+  .rounded-circle {
+    margin-top: 0;
+  }
   section {
     padding-top: 0%;
   }
