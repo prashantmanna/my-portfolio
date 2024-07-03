@@ -19,6 +19,9 @@
   .rounded-circle {
     margin-top: 0%;
   }
+  .icon_profile {
+    margin-top: 0%;
+  }
 }
 @media screen and (max-width: 1400px) {
   .rounded-circle {
@@ -65,6 +68,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .icon_profile {
+    margin-top: 0;
+  }
   #contact,
   footer {
     height: 40vh;

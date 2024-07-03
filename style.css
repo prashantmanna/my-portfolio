@@ -217,6 +217,17 @@ section {
 .btn-color-2:hover {
   cursor: pointer;
 }
+
+.icon_profile {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  border-radius: 10%;
+  border-bottom: 0%;
+  border-color: black;
+  border: 3px solid #555;
+  object-fit: fill;
+  margin-top: 50%;
+}
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
