@@ -287,7 +287,6 @@ section {
 .text-container {
   padding: 1rem;
   text-align: center;
-  align-items: center;
   padding-top: 80px;
   flex: 1;
   background: white;
