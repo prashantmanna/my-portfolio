@@ -37,6 +37,12 @@
   .rounded-circle {
     margin-top: 0;
   }
+  .about-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+    height: fit-content;
+    flex-direction: column;
+  }
   section {
     padding-top: 0%;
   }
